@@ -55,6 +55,5 @@ jobs:
       run: python -m pip install asv
     - name: Run benchmark
       run: |
-        cd benchmarks
         asv machine --yes 
         asv run
