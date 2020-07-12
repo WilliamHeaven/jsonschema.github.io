@@ -58,4 +58,6 @@ jobs:
         pwd 
         asv --help
         asv machine --yes 
+        asv run --help
         asv run
+        echo "asv is end"
