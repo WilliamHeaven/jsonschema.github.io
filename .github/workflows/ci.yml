@@ -56,6 +56,6 @@ jobs:
     - name: Run benchmark
       run: |
         pwd 
-        cd benchmarks
+        asv --help
         asv machine --yes 
         asv run
