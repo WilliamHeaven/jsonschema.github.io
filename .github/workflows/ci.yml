@@ -51,5 +51,4 @@ jobs:
         asv machine --yes 
         python --version
         which python
-        whereis python
         asv run NEW
