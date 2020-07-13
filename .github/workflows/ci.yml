@@ -48,7 +48,6 @@ jobs:
     - name: Install jsonschema
       run: python -m pip install jsonschema
     - name: Run benchmark
-    - name: Run benchmark
       run: |
         pwd 
         asv machine --yes 
