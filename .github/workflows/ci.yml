@@ -44,7 +44,9 @@ jobs:
     - name: Run tox
       run: python -m tox -e "${{ matrix.python-version.toxenv }}"
     - name: Install asv
-      run: python -m pip install asv
+      run: |
+       python -m pip install asv
+       python -m pip install conda
     - name: Install jsonschema
       run: python -m pip install jsonschema
     - name: Run benchmark
@@ -53,4 +55,4 @@ jobs:
         asv machine --yes 
         python --version
         which python
-        asv run NEW
+        asv run ALL
