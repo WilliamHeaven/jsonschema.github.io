@@ -24,8 +24,6 @@ jobs:
           - name: pypy2
             toxenv: pypy2-tests
           - name: pypy2
-            toxenv: pypy2-tests_nongpl
-          - name: pypy2
             toxenv: safety
         exclude:
           # Building on Windows isn't supported, and PyPy on Windows
