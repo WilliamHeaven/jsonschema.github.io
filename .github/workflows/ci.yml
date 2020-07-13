@@ -56,12 +56,5 @@ jobs:
     - name: Run benchmark
       run: |
         pwd 
-        asv --help
         asv machine --yes 
-        asv run --help
-        echo "asv is start"
-        asv run ALL
-        echo "asv is end"
-        asv show benchmark_asv
-        asv publish
-        asv preview
+        asv check
