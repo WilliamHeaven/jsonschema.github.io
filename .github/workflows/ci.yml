@@ -27,7 +27,18 @@ jobs:
             toxenv: pypy2-tests_nongpl
           - name: pypy2
             toxenv: safety
-              
+        exclude:
+          # Building on Windows isn't supported, and PyPy on Windows
+          # seems to fail with silent obscure errors.
+          - os: windows-latest
+            python-version:
+              name: pypy2
+              toxenv: pypy2-build
+          - os: windows-latest
+            python-version:
+              name: pypy2
+              toxenv: safety         
+                    
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python ${{ matrix.python-version.name }}
