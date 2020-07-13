@@ -60,5 +60,5 @@ jobs:
         asv machine --yes 
         asv run --help
         echo "asv is start"
-        asv run
+        asv run ALL
         echo "asv is end"
