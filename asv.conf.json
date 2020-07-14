@@ -13,7 +13,7 @@
     // benchmarked
     "repo": ".",
     "dvcs": "git",
-    "branches": ["HEAD"],
+    "branches": ["benchmark_asv"],
 
     // The base URL to "how a commit for the project.
     "show_commit_url": "https://github.com/WilliamHeaven/jsonschema/commit/",
@@ -64,8 +64,4 @@
     // regressions.  The default is to start from the first commit
     // with results. If the commit is `null`, regression detection is
     // skipped for the matching benchmark.
-
-    "regressions_first_commits": {
-       "io_matlab\\.StructArr\\..*": "67c089a6",  //  structarrs weren't properly implemented before this
-    }
 }
