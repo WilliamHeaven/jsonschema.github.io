@@ -44,6 +44,5 @@ jobs:
         python --version
         which python
         asv run ALL
-        asv show benchmark_asv
         asv publish
         asv preview
